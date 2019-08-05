@@ -48,13 +48,13 @@ function processQuestions() {
 
                 connection.query("SELECT * FROM products WHERE id = " + itemId,
                     function (error, res) {
-                        var updatedQuantity = parseInt("SELECT * FROM products WHERE stock_quantity") - parseInt(quantityAmount);
-
+                        var updatedQuantity = parseInt(res[0].stock_quantity) - parseInt(quantityAmount);
+                        console.log(updatedQuantity);
                         if (res[0].stock_quantity >= quantityAmount) {
                             connection.query("UPDATE products SET ? WHERE ?",
                                 [
                                     {
-                                        quantityAmount: updatedQuantity
+                                        stock_quantity: updatedQuantity
                                    },
                                     {
                                         id: itemId
@@ -64,10 +64,8 @@ function processQuestions() {
                         else {
                             console.log("Invalid Entry!");
                         }
-                    })
-                    .then(function () {
                         connection.end();
-                    });
+                    })
             });
     })
 }
