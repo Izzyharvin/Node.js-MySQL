@@ -48,7 +48,7 @@ function processQuestions() {
 
                 connection.query("SELECT * FROM products WHERE id = " + itemId,
                     function (error, res) {
-                        var updatedQuantity = parseInt(stock_quantity) - parseInt(quantityAmount);
+                        var updatedQuantity = parseInt("SELECT * FROM products WHERE stock_quantity") - parseInt(quantityAmount);
 
                         if (res[0].stock_quantity >= quantityAmount) {
                             connection.query("UPDATE products SET ? WHERE ?",
