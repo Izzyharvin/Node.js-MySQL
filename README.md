@@ -23,11 +23,11 @@ I've created an Amazon-like storefront with the MySQL skills I learned this unit
 ![Question1](./pictures/first_question.png)
 6. It will then ask you for the Quantity of the amount of the product you want (type in the Quantity amount).
 ![Question2](./pictures/second_question.png)
-7. Then it will show you the Quantity that is left over.
+7. Then it will show you the Quantity that is left over.<br>
 ![Quantity_Left](./pictures/shows_quantity_left.png)
 8. After that is done you can rerun the ```node bamazonCustomer.js``` or open up the MySQL database and it will show that it updated.
 Before:<br>
-![Updated_Database](./pictures/updated_database(before).png)
+![Updated_Database](./pictures/updated_database(before).png)<br>
 After:<br>
 ![Updated_Database](./pictures/updated_database(after).png)
 
@@ -39,4 +39,4 @@ After:<br>
 - package-lock.json
 
 # Creator of App
-Israel Harvin 7/29/2019
+Israel Harvin 8/6/2019
