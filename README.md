@@ -26,9 +26,9 @@ I've created an Amazon-like storefront with the MySQL skills I learned this unit
 7. Then it will show you the Quantity that is left over.
 ![Quantity_Left](./pictures/shows_quantity_left.png)
 8. After that is done you can rerun the ```node bamazonCustomer.js``` or open up the MySQL database and it will show that it updated.
-Before:
+Before:<br>
 ![Updated_Database](./pictures/updated_database(before).png)
-After:
+After:<br>
 ![Updated_Database](./pictures/updated_database(after).png)
 
 
