@@ -20,10 +20,16 @@ I've created an Amazon-like storefront with the MySQL skills I learned this unit
 ![products](./pictures/MySQL_database1.png)
 ![products](./pictures/MySQL_database2.png)
 5. After that it will as you for the ID of the product you want (type in the ID number).
-![]()
+![Question1](./pictures/first_question.png)
 6. It will then ask you for the Quantity of the amount of the product you want (type in the Quantity amount).
-![]()
-7.
+![Question2](./pictures/second_question.png)
+7. Then it will show you the Quantity that is left over.
+![Quantity_Left](./pictures/shows_quantity_left.png)
+8. After that is done you can rerun the ```node bamazonCustomer.js``` or open up the MySQL database and it will show that it updated.
+Before:
+![Updated_Database](./pictures/updated_database(before).png)
+After:
+![Updated_Database](./pictures/updated_database(after).png)
 
 
 # Files Used
